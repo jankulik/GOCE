@@ -44,8 +44,3 @@ function checkKey(e)
     }
 
 }
-
-function load()
-{
-	
-}
