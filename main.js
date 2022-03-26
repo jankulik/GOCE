@@ -1,7 +1,7 @@
 let width = screen.width;
 
-var gif1 = new SuperGif({gif: document.getElementById('gif1'), max_width: width*0.47});
-var gif2 = new SuperGif({gif: document.getElementById('gif2'), max_width: width*0.47});
+var gif1 = new SuperGif({gif: document.getElementById('gif1'), max_width: width*0.47, draw_while_loading: false});
+var gif2 = new SuperGif({gif: document.getElementById('gif2'), max_width: width*0.47, draw_while_loading: false});
 gif1.load();
 gif2.load();
 
