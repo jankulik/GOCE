@@ -49,30 +49,30 @@ const light2 = new THREE.AmbientLight(0xFFFFFF);
 scene2.add(light2);
 
 var mtlLoader1 = new THREE.MTLLoader();
-mtlLoader1.setTexturePath('/assets/');
-mtlLoader1.setPath('/assets/');
+mtlLoader1.setTexturePath('./assets/');
+mtlLoader1.setPath('./assets/');
 mtlLoader1.load('earth1.mtl', function (materials) {
 
     materials.preload();
 
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials(materials);
-    objLoader.setPath('/assets/');
+    objLoader.setPath('./assets/');
     objLoader.load('earth.obj', function (object) {
         scene1.add(object);
     });
 });
 
 var mtlLoader2 = new THREE.MTLLoader();
-mtlLoader2.setTexturePath('/assets/');
-mtlLoader2.setPath('/assets/');
+mtlLoader2.setTexturePath('./assets/');
+mtlLoader2.setPath('./assets/');
 mtlLoader2.load('earth2.mtl', function (materials) {
 
     materials.preload();
 
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials(materials);
-    objLoader.setPath('/assets/');
+    objLoader.setPath('./assets/');
     objLoader.load('earth.obj', function (object) {
         scene2.add(object);
     });
