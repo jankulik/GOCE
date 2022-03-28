@@ -39,6 +39,22 @@ controls2.enableZoom = true;
 controls2.autoRotate = true;
 controls2.autoRotateSpeed = 1.0;
 
+function clicked()
+{
+    if(controls1.autoRotate == true)
+    {
+        controls1.autoRotate = false;
+        controls2.autoRotate = false;
+        toggle_btn.innerText = "Resume autorotation";
+    }
+    else
+    {
+        controls1.autoRotate = true;
+        controls2.autoRotate = true;
+        toggle_btn.innerText = "Pause autorotation";
+    }
+}
+
 const light1 = new THREE.AmbientLight(0xFFFFFF);
 scene1.add(light1);
 
