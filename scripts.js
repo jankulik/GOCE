@@ -1,8 +1,5 @@
 let width = innerWidth;
 
-console.log(window.innerWidth);
-console.log(window.innerHeight);
-
 container1 = document.getElementById('canvas1');
 document.body.appendChild(container1);
 
@@ -23,10 +20,10 @@ var scene1 = new THREE.Scene();
 var scene2 = new THREE.Scene();
 
 var camera1 = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
-camera1.position.z = 1.8;
+camera1.position.z = 6;
 
 var camera2 = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
-camera2.position.z = 1.8;
+camera2.position.z = 6;
 
 var controls1 = new THREE.OrbitControls(camera1, renderer1.domElement);
 controls1.enableDamping = true;

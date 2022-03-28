@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Three.js Boilerplate</title>
+		<title>GOCE</title>
 		<style>
 			#canvas1 {
 			    background-color: white;
@@ -26,9 +26,30 @@
 			    float: right;
 			}
 
+			.column {
+				flex: 50%;
+				padding: 5px;
+	        }
+
+	        .container {
+				display: flex;
+	        }
 		</style>
 	</head>
 	<body>
+		<center>
+	    <h1>Animated tracking losses map</h1>
+
+	    <div class="container">
+	        <div class="column">
+	            <p>Primary receiver</p>
+	        </div>
+	        <div class="column">
+	            <p>Redundant receiver</p>
+			</div>
+	    </div>
+		</center>
+
 		<div id="canvas1"></div>
 		<div id="canvas2"></div>
 
