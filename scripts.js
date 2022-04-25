@@ -19,25 +19,25 @@ container2.appendChild(renderer2.domElement);
 var scene1 = new THREE.Scene();
 var scene2 = new THREE.Scene();
 
-var camera1 = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
-camera1.position.z = 6;
+var camera1 = new THREE.PerspectiveCamera(30, 1, 0.1, 1000);
+camera1.position.z = 14;
 
-var camera2 = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
-camera2.position.z = 6;
+var camera2 = new THREE.PerspectiveCamera(30, 1, 0.1, 1000);
+camera2.position.z = 14;
 
 var controls1 = new THREE.OrbitControls(camera1, renderer1.domElement);
 controls1.enableDamping = true;
 controls1.dampingFactor = 0.25;
 controls1.enableZoom = true;
 controls1.autoRotate = true;
-controls1.autoRotateSpeed = 1.0;
+controls1.autoRotateSpeed = -1.0;
 
 var controls2 = new THREE.OrbitControls(camera2, renderer2.domElement);
 controls2.enableDamping = true;
 controls2.dampingFactor = 0.25;
 controls2.enableZoom = true;
 controls2.autoRotate = true;
-controls2.autoRotateSpeed = 1.0;
+controls2.autoRotateSpeed = -1.0;
 
 function clicked()
 {
@@ -55,10 +55,10 @@ function clicked()
     }
 }
 
-const light1 = new THREE.AmbientLight(0xFFFFFF);
+const light1 = new THREE.AmbientLight(0xffffff, 1.2);
 scene1.add(light1);
 
-const light2 = new THREE.AmbientLight(0xFFFFFF);
+const light2 = new THREE.AmbientLight(0xffffff, 1.2);
 scene2.add(light2);
 
 var mtlLoader1 = new THREE.MTLLoader();
