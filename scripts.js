@@ -28,14 +28,14 @@ camera2.position.z = 14;
 var controls1 = new THREE.OrbitControls(camera1, renderer1.domElement);
 controls1.enableDamping = true;
 controls1.dampingFactor = 0.25;
-controls1.enableZoom = true;
+controls1.enableZoom = false;
 controls1.autoRotate = true;
 controls1.autoRotateSpeed = -1.0;
 
 var controls2 = new THREE.OrbitControls(camera2, renderer2.domElement);
 controls2.enableDamping = true;
 controls2.dampingFactor = 0.25;
-controls2.enableZoom = true;
+controls2.enableZoom = false;
 controls2.autoRotate = true;
 controls2.autoRotateSpeed = -1.0;
 
